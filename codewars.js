@@ -40,4 +40,10 @@ function cubeOdd(arr) {
     return sum;
 }
 
+console.log(cubeOdd([1, 2, 3, 4]));
+console.log(cubeOdd([-3,-2,2,3]));
+console.log(cubeOdd(["a",12,9,"z",42]));
+
+
+
 
