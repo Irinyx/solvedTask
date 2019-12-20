@@ -17,3 +17,27 @@ function squareArea(A){
 
 console.log(squareArea(2));
 
+//https://www.codewars.com/kata/sum-of-odd-cubed-numbers/train/javascript
+/*Find the sum of the odd numbers within an array, after cubing the initial integers.
+The function should return undefined if any of the values aren't numbers.*/
+
+function cubeOdd(arr) {
+
+    let sum = 0;
+    let str = undefined;
+
+    for(let i = 0; i < arr.length; i++){
+
+        if(arr[i] % 2 !== 0){
+            sum += Math.pow(arr[i], 3)
+        }
+        if(typeof arr[i] !== "number"){
+            return str;
+            break;
+        }
+    }
+
+    return sum;
+}
+
+
